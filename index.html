@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <title>Data visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script><table>
+        <style>
+            table {
+                width:35%;
+                border-radius:20px;
+                transform: translateY(-150px);
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                border-radius:20px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            
+        </style>
+</html>
+<body>
+    <div class="header">
+        <h1>✖️ Business</h1>
+        <ul>
+            <li><i class="fa-solid fa-table-cells-large"></i>Analytics</li>
+            <li><i class="fa-solid fa-bag-shopping"></i>products</li>
+            <li><i class="fa-regular fa-envelope"></i>Messages</li>
+            <li><i class="fa-regular fa-user"></i>customers</li>
+            <hr>
+            <li><i class="fa-solid fa-gear"></i>setting</li>
+            <li><i class="fa-solid fa-arrow-right-from-bracket"></i>sign out</li>
+        </ul>
+       
+    </div>
+   <center>
+    <div class="toggle-btn" id="btn" style="transform: translateY(-870px); position:relative; left:90px; z-index:999;">
+        <span style="color:red;">Theme</span>
+     </div>
+   </center>
+    <div class="d1">
+     <h1>Analytics</h1>
+    
+    </div>
+    <div id="date">
+        <p>01.08.2022 - 31.08.2022</p> 
+        <i class="fa fa-calendar-day calendar"></i>
+    </div>
+  <div class="box">
+    <div class="h">
+        <h2>orders</h2>
+        <h3 style="position: relative; right:50px;">201</h3>
+        <i class="fa fa-copy"></i>
+        <div class="para">
+            <h4 style="color:#3be33b; padding-bottom:15px; transform: translateY(-50px);">8.2%</h4>
+            <p style="color: gray; position: relative; bottom:50px;">since last month</p>
+        </div>
+    </div>
+    <div class="h">
+        <h2>Approved</h2>
+        <h3 style="position: relative; right:50px; ">36</h3>
+        <i class="fa fa-square-check"></i>
+       <div class="para">
+        <h4 style="color:#3be33b; padding-bottom:15px; transform: translateY(-50px);">3.4%</h4>
+        <p style="color: gray; position: relative; bottom:50px;">since last month</p>
+       </div>
+    </div>
+    </div>
+    <div class="box2">
+        <div class="h">
+            <h2>Month total</h2>
+            <h3 style="position: relative; right:50px;">25410</h3>
+            <i class="fa fa-dollar-sign"></i>
+           <div class="para">
+            <h4 style="color:#b32c2c; padding-bottom:15px; transform: translateY(-50px);">0.2%</h4>
+            <p style="color: gray; position: relative; bottom:50px;">since last month</p>
+           </div>
+        </div>
+        <div class="h">
+            <h2>Revenue</h2>
+            <h3 style="position: relative; right:50px;">201</h3>
+            <i class="fa fa-credit-card"></i>
+            <div class="para">
+                <h4 style="color:#b32c2c; padding-bottom:15px; transform: translateY(-50px);">1.2%</h4>
+                <p style="color: gray; position: relative; bottom:50px;">since last month</p>
+            </div>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="h h2">
+            <h3>users</h3>
+            <h3 style="font-size:30px;">4.890</h3>
+            <b>62%</b><br><br>
+            <b>28%</b><br><br>
+            <b>12%</b><br><br>
+            
+        </div>
+        <img style="width:150px;  height:150px; position: relative; left: 800px; bottom: 1350px;" 
+        src="Yellow chart light.png" alt="" id="yellow-chart">
+        <div class="h h2">
+            <h3>subscriptions</h3>
+            <h3 style="font-size:30px;">1.201</h3>
+            <b>70%</b><br><br>
+            <b>30%</b><br><br>
+        </div>
+        <img  style="width:150px;  height:150px; position: relative; left: 800px; bottom: 1350px;" 
+        src="Blue chart light.png" alt="img" id="blue-chart">
+    </div>
+    <div class="box4" style="width:1500px;">
+        <div class="h h2">
+            <h3 style=" position: relative;
+            right:35px;">Paid invoices</h3>`
+            <h3 style="font-size:30px;  transform: translate(-20px,-50px);">$30256.23</h3>
+            <i style="position: relative; bottom:30px; transform: translate(30px,-150px);"style="position: relative; bottom:30px;" class="fa fa-wallet"></i>   
+            <p style="position: relative; bottom:90px; color:gray">current financial year</p><br>
+        </div>
+        <img src="light pink.jpg" alt="img" id="pink"
+        style="width:50px;  height:50px; transform: translate(-5px,260px);">
+        <div class="h h2" style="position: relative; left:450px;">
+            <h3  style=" position: relative;
+            right:35px;">Funds Received</h3>
+            <h3 style="font-size:30px; transform: translateX(-20px);">$150256.23</h3>
+            <i style="position: relative; bottom:30px; transform: translate(30px,-110px);"class="fa fa-wallet"></i>
+            <p style="position: relative; bottom:50px; color:gray">current financial year</p><br>
+        </div>
+        <img src="light green.jpg" alt="img" id="green"
+        style="width:50px;  height:50px; transform: translate(100px,260px);">
+    </div>
+    <b style="font-size:32px; position: relative; bottom:1520px; left:350px;">sales dynamic;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024</b>
+    <div class="line"> 
+        <img  style="width:500px;  height:200px; position: relative; left:330px; bottom: 1500px;" 
+        src="Bar chart light.png" alt="bar" id="bar-chart">
+        <b style="font-size:32px; position: relative; bottom:1425px; left:-150px;">Over All user Activity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2024</b>
+        <img  style="width:500px;  height:350px; position: relative; left:330px; bottom:1400px;"src="l.png" id="line-chart">
+    </div>
+  </div>
+  </div>
+  <div class="customerbox">
+    <div class="orders">
+        <p>Customer Orders</p>
+        <i class="fa fa-refresh"></i>
+    </div>
+    <div class="heading">
+        <ul>
+            <li>Profile</li>
+            <li>Address</li>
+            <li>Date</li>
+            <li>Status</li>
+            <li>Price</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="customer">
+            <img src="p1.jpeg">
+            <p class="name">Jayden</p>
+            <p class="address">&nbsp;London</p>
+            <p class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;22.8.22</p>
+            <p class="status">Delivered</p>
+            <p class="price">&nbsp;&nbsp;&nbsp;&nbsp; $7890</p> 
+        </div>
+        <div class="customer">
+            <img src="p2.jpeg">
+            <p class="name">Jericho</p>
+            <p class="address">&nbsp;&nbsp;&nbsp;New York</p>
+            <p class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24.8.22</p>
+            <p class="status">Processed</p>
+            <p class="price">$6892</p> 
+        </div>
+        <div class="customer">
+            <img src="p3.jpg">
+            <p class="name">carolin</p>
+            <p class="address">&nbsp;&nbsp;&nbsp;&nbsp;Tokyo</p>
+            <p class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18.8.22</p>
+            <p class="status">&nbsp;Cancelled</p>
+            <p class="price">$3200</p> 
+        </div>
+        <div class="customer">
+            <img src="p4.jpeg">
+            <p class="name">Sawyer</p>
+            <p class="address">South Korea</p>
+            <p class="date">3.8.22</p>
+            <p class="status">&nbsp;&nbsp;&nbsp;Delivered</p>
+            <p class="price">&nbsp;&nbsp;&nbsp;&nbsp;$1500</p> 
+        </div>
+        
+    </div>
+</div>
+<div class="new">
+    <div class="support">
+        <img src="customer support.webp"><br>
+         <button>Get Support</button>
+    </div>
+</div>
+
+</body>
+</html>
+<script>
+    let btn = document.getElementById("btn");
+    var yellowChart = document.getElementById('yellow-chart');
+    var blueChart = document.getElementById('blue-chart');
+    var barChart = document.getElementById('bar-chart');
+    var lineChart = document.getElementById('line-chart');
+    var pinkchart = document.getElementById('pink');
+    var greenchart = document.getElementById('green');
+   
+    btn.onclick = function(){
+        document.body.classList.toggle("darker-theme");
+        if(yellowChart.src.includes("light")){
+            yellowChart.src="Yellow chart dark.png";
+            blueChart.src="Blue chart dark.png";
+            barChart.src="n7.jpg";
+            pinkchart.src="dark pink.jpg";
+            lineChart.src="I darker.jpg";
+            greenchart.src="dark green.jpg";
+        } else {
+            yellowChart.src="Yellow chart light.png";
+            blueChart.src="Blue chart light.png";
+            barChart.src="Bar chart light.png";
+            lineChart.src="l.png";
+            pinkchart.src="light pink.jpg";
+            greenchart.src="light green.jpg";
+        }
+    }
+</script>
+
+
+
+
+
+
+
+
